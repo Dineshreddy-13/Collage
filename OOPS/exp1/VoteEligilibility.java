@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class VoteEligibility {  
+public class VoteEligilibility {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("<---------------------------->");
@@ -11,8 +11,5 @@ public class VoteEligibility {
         eligibility = (age>18) ? "eligible to vote" : "not eligible to vote";
         System.out.println(eligibility);
         input.close();
-
 }
-
-    
 }
