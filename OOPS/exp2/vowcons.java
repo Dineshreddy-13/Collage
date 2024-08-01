@@ -1,4 +1,4 @@
-package lab2;
+package Hell.OOPS.exp2;
 public class vow_con {
    public static void main(String[] args) {
        String inp_String = "NIVESH";
