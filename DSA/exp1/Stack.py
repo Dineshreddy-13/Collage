@@ -1,8 +1,8 @@
 class Stack:
-    def __init__(self, stack):
-        self.stack = stack
+    def __init__(self, max):
+        self.stack = [None] * max
         self.top = -1
-        self.max = len(stack)
+        self.max = max
 
     def push(self, data):
         if self.isFull():
@@ -35,8 +35,8 @@ class Stack:
 print("<--------------------------->")
 print("| DINESH REDDY - URK23CS1263|")
 print("<--------------------------->\n")
-
-s = Stack([None] * 5)
+size = int(input("Enter the size of the stack : "))
+s = Stack(size)
 s.push(1)
 s.push(2)
 s.push(3)

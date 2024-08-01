@@ -72,7 +72,7 @@ class postfix_evaluation:
                     self.final_result.append(d)
                     continue
                 elif self.exp[i] == "^":
-                    d = x ^ y
+                    d = x ** y
                     self.final_result.append(d)
         print(self.final_result.pop())
 
