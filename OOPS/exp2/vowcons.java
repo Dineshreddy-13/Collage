@@ -1,7 +1,7 @@
 package Hell.OOPS.exp2;
 public class vow_con {
    public static void main(String[] args) {
-       String inp_String = "NIVESH";
+       String inp_String = "Dinesh";
        int vow = 0;
        int con = 0;
        inp_String = inp_String.toLowerCase();
