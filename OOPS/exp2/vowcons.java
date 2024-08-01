@@ -1,5 +1,5 @@
 package Hell.OOPS.exp2;
-public class vow_con {
+public class vowcons {
    public static void main(String[] args) {
        String inp_String = "Dinesh";
        int vow = 0;
