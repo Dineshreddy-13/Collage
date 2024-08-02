@@ -32,9 +32,8 @@ class Stack:
             print(self.stack[i],end=" ")
         print()
 
-print("<--------------------------->")
-print("| DINESH REDDY - URK23CS1263|")
-print("<--------------------------->\n")
+print("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n")
+
 size = int(input("Enter the size of the stack : "))
 s = Stack(size)
 s.push(1)

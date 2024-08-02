@@ -15,8 +15,8 @@ class infix_to_postfix:
         
     def associativity(self,a):
         if a == "^":
-            return "r"
-        return "l"
+            return "R"
+        return "L"
     def postfix(self):
         for i in range(len(self.exp)):
             d = self.exp[i]
@@ -29,59 +29,47 @@ class infix_to_postfix:
                     self.result.append(self.Stack.pop())
                 self.Stack.pop()
             else:
-                while self.Stack and (self.precedence(d) < self.precedence(self.Stack[-1]) or (self.precedence(d) == self.precedence(self.Stack[-1]) and self.associativity(d) == "l")):
+                while self.Stack and (self.precedence(d) < self.precedence(self.Stack[-1]) or (self.precedence(d) == self.precedence(self.Stack[-1]) and self.associativity(d) == "L")):
                     self.result.append(self.Stack.pop())
                 self.Stack.append(d)
     
         while self.Stack:
             self.result.append(self.Stack.pop())
         print("".join(self.result))
-expression = input("Enter infix expression : ")
-obj  = infix_to_postfix(expression)
-obj.postfix()
 
-
-
-
-class postfix_evaluation:
-    def __init__(self,exp):
-        self.exp = exp
-        self.final_result = []
-    def evaluate(self):
+    def postfix_evaluation(self):
         for i in range(len(self.exp)):
             if self.exp[i] not in ("^","/","*","+","-","(",")"):
-                self.final_result.append(self.exp[i])
+                self.Stack.append(self.exp[i])
             else:
-                y = int(self.final_result.pop())
-                x = int(self.final_result.pop())
+                y = int(self.Stack.pop())
+                x = int(self.Stack.pop())
                 
                 if self.exp[i] == "+":
                     d = x + y
-                    self.final_result.append(d)
+                    self.Stack.append(d)
                     continue
                 elif self.exp[i] == "-":
                     d = x - y
-                    self.final_result.append(d)
+                    self.Stack.append(d)
                     continue
                 elif self.exp[i] == "*":
                     d = x * y
-                    self.final_result.append(d)
+                    self.Stack.append(d)
                     continue
                 elif self.exp[i] == "/":
                     d = x / y
-                    self.final_result.append(d)
+                    self.Stack.append(d)
                     continue
                 elif self.exp[i] == "^":
-                    d = x ** y
-                    self.final_result.append(d)
-        print(self.final_result.pop())
-
-    
-expression  = input("Enter the postfix expression : ")
-obj = postfix_evaluation(expression)
-obj.evaluate()
-
-                    
+                    d = x ^ y
+                    self.Stack.append(d)
+        print(self.Stack.pop())
+expression1 = input("enter infix expression : ")
+obj  = infix_to_postfix(expression1)
+obj.postfix()
 
 
-    
+expression2 = input("enter postfix expression : ")
+obj  = infix_to_postfix(expression2)
+obj.postfix_evaluation()
