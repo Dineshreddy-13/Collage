@@ -46,24 +46,19 @@ class infix_to_postfix:
                 x = int(self.Stack.pop())
                 
                 if self.exp[i] == "+":
-                    d = x + y
-                    self.Stack.append(d)
+                    self.Stack.append(x+y)
                     continue
                 elif self.exp[i] == "-":
-                    d = x - y
-                    self.Stack.append(d)
+                    self.Stack.append(x-y)
                     continue
                 elif self.exp[i] == "*":
-                    d = x * y
-                    self.Stack.append(d)
+                    self.Stack.append(x*y)
                     continue
                 elif self.exp[i] == "/":
-                    d = x / y
-                    self.Stack.append(d)
+                    self.Stack.append(x/y)
                     continue
                 elif self.exp[i] == "^":
-                    d = x ^ y
-                    self.Stack.append(d)
+                    self.Stack.append(x**y)
         print(self.Stack.pop())
 expression1 = input("enter infix expression : ")
 obj  = infix_to_postfix(expression1)
