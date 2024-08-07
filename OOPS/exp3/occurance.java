@@ -7,11 +7,11 @@ public class occurance {
     public static void main(String[] args) {
         System.out.println("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n");
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String :");
-        String s = scanner.nextLine();
+        String s = sc.nextLine();
         System.out.println("Enter the word to search :");
-        String word = scanner.nextLine();
+        String word = sc.nextLine();
 
         ArrayList<Integer> positions = new ArrayList<>();
         int index = s.indexOf(word);
@@ -26,6 +26,6 @@ public class occurance {
             System.out.println( word + " : " + positions.size());
             System.out.println("Positions : " + positions);
         }
-        scanner.close();
+        sc.close();
     }
 }
