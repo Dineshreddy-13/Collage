@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Sequence {
     public static void main(String[] args) {
+        System.out.println("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n");
+
         Scanner sc = new Scanner(System.in);
         String[] arr = new String[5];
         System.out.println("Enter the 5 sequnces : ");
