@@ -17,7 +17,7 @@ class Queue:
             else:
                 self.rear += 1
             self.queue[self.rear] = data
-            print("Enqueue successful --> "+data)
+            print("Enqueue successfull --> "+data)
 
     def isFull(self):
         if self.type == "circular":
@@ -35,7 +35,7 @@ class Queue:
                 self.front = (self.front + 1) % self.max
             else:
                 self.front += 1
-            print("Dequeue successful --> "+x)
+            print("Dequeue successfull --> "+x)
             return x
 
     def isEmpty(self):
