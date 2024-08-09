@@ -1,2 +1,2 @@
 # Hell
-<h3 style="color: blue;">PROGRAMMING - LAB EXPERIMENTS</h3>
+<h3>PROGRAMMING - LAB EXPERIMENTS</h3>
