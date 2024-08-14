@@ -1,8 +1,7 @@
 public class PrimeNumbers {
             public static void main(String[] args) {
-			System.out.println("<---------------------------->");
-			System.out.println("| DINESH REDDY - URK23CS1263 |");
-			System.out.println("<---------------------------->\n");
+        System.out.println("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n");
+
 			int count = 0;
 			int number = 2;
 	
