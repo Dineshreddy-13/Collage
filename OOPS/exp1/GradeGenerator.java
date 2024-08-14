@@ -2,9 +2,8 @@ import java.util.Scanner;
 public class GradeGenerator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("<---------------------------->");
-        System.out.println("| DINESH REDDY - URK23CS1263 |");
-        System.out.println("<---------------------------->\n");
+        System.out.println("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n");
+
         System.out.println("Enter subjects marks : ");
         float physics = input.nextFloat();
         float chemistry = input.nextFloat();
