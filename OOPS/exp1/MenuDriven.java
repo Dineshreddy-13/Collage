@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class MenuDriven {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-		System.out.println("<---------------------------->");
-		System.out.println("| DINESH REDDY - URK23CS1263 |");
-		System.out.println("<---------------------------->\n");
+        System.out.println("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n");
+
         int choice;
         System.out.println("Enter a number: ");
         int number = scanner.nextInt();
