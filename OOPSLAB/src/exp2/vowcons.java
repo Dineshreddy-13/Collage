@@ -1,4 +1,4 @@
-package Hell.OOPS.exp2;
+package exp2;
 public class vowcons {
    public static void main(String[] args) {
        String inp_String = "Dinesh";

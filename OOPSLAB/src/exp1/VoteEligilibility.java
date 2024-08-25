@@ -1,3 +1,4 @@
+package exp1;
 import java.util.Scanner;
 public class VoteEligilibility {
     public static void main(String[] args) {

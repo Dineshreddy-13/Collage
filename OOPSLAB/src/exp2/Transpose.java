@@ -1,4 +1,4 @@
-package Hell.OOPS.exp2;
+package exp2;
 
 import java.util.Scanner;
 public class Transpose {

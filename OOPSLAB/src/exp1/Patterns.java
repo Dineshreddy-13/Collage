@@ -1,4 +1,4 @@
-
+package exp1;
 public class Patterns {
     public static void main(String[] args) {
         System.out.println("<---------------------------->\n| DINESH REDDY - URK23CS1263 |\n<---------------------------->\n");

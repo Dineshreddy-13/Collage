@@ -1,4 +1,4 @@
-package Hell.OOPS.exp3;
+package exp3;
 import java.util.Scanner;
 
 public class CaseConvert {
