@@ -19,17 +19,13 @@ public class distance {
 	
 	public static distance add(distance a, distance b) {
 		return new distance(a.feet+b.feet,a.inches+b.inches);
+		
 	}
 	
 	public static void main(String args[]) {
 		distance d1 = new distance(10,20);
 		distance d2 = new distance(10,20);
 		distance d3 = add(d1, d2);
-		d3.Display();
-		
-		
+		d3.Display();	
 	}
-	
-	
-
 }

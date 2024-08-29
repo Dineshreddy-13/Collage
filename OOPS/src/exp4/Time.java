@@ -11,6 +11,7 @@ public class Time {
 	
 	Time(int h, int m, int s){
 		hours = h;
+
 		minutes = m;
 		seconds = s;
 	}
@@ -20,20 +21,21 @@ public class Time {
 	}
 	
 	public static Time addTime(Time a,Time b) {
-		int h = (a.hours + b.hours > 12)? a.hours + b.hours-12: a.hours + b.hours;
+		int h = (a.hours + b.hours > 12)? (a.hours + b.hours)%12: a.hours + b.hours;
 		int m = a.minutes + b.minutes;
 			 if (m > 60) {
-				 m -= 60;
+				 m %= 60;
 				 h++;
 		}
 		int s = a.seconds + b.seconds;
 				 if (m > 60) {
-					 m -= 60;
+					 m %= 60;
 					 m++;
 			}
 			 return new Time(h,m,s);
-		
 	}
+	
+
 	
 	public static void main(String args[]) {
 		Time t1 = new Time(11,50,3);
@@ -41,5 +43,4 @@ public class Time {
 		Time t3 = addTime(t1, t2);
 		t3.displayTime();
 	}
-	
 }
