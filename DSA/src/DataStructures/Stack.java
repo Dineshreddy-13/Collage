@@ -1,7 +1,7 @@
 package DataStructures;
 import java.util.Scanner;
 
-public class Stack {
+public class Stack { // status -> complete
     int arr[],top,max;
 
     Stack(int size){

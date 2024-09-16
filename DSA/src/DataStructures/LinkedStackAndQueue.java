@@ -1,7 +1,7 @@
 package DataStructures;
 import java.util.Scanner;
 
-class Node {
+class Node { // status -> complete
     int data;
     Node next;
     Node(int data){

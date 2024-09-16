@@ -1,6 +1,6 @@
 package Algorithms.sorting;
 import java.util.Arrays;
-public class BubbleSort {
+public class BubbleSort { // status -> complete
 // better bubble sort
     static int[] bubbleSort(int arr[]){
         int n = arr.length - 1;

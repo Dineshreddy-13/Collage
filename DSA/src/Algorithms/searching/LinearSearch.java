@@ -1,5 +1,5 @@
 package Algorithms.searching;
-public class LinearSearch {
+public class LinearSearch { // status -> complete
 
     static int linearSearch(int[] arr,int target){
         for (int i= 0; i<arr.length; i++){

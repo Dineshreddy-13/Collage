@@ -1,5 +1,5 @@
 package DataStructures;
-public class DoublyLinkedList {
+public class DoublyLinkedList { // status -> complete
     Node head;
 
     static class Node{

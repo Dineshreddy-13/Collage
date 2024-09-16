@@ -1,6 +1,6 @@
 package DataStructures;
 
-public class LinkedList {
+public class LinkedList { // status -> complete
    	
 	Node head;
 	static class Node{

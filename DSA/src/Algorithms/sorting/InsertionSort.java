@@ -1,6 +1,6 @@
 package Algorithms.sorting;
 import java.util.Arrays;
-public class InsertionSort {
+public class InsertionSort { // status -> complete
     public static int[] insertionSort(int arr[]){
         int n = arr.length;
         for(int i = 1; i<n ; i++){

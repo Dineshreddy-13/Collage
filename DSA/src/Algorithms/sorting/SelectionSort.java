@@ -1,6 +1,6 @@
 package Algorithms.sorting;
 import java.util.Arrays;
-public class Selection {
+public class SelectionSort { // status -> complete
 
     // selection sort by swapping 
     static int[] fun(int[] arr){
