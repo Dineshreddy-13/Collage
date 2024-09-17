@@ -1,4 +1,4 @@
-package exp4;
+package DataStructures;
 
 public class CircularQueue { // status -> complete
     int arr[];
