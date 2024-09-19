@@ -49,8 +49,8 @@ public class LinearAndBinarySearch {
             System.out.println("Menu : \n1.LinearSearch\n2.BinarySearch\n3.exit");
             System.out.print("choose search : ");
             switch(sc.nextInt()) {
-                case 1 -> System.out.println("index : " + linearSearch(arrayInput(sc),inputKey(sc)));
-                case 2 -> System.out.println("index : " + binarySearch(arrayInput(sc),inputKey(sc)));
+                case 1 -> System.out.println("--> index : " + linearSearch(arrayInput(sc),inputKey(sc)));
+                case 2 -> System.out.println("--> index : " + binarySearch(arrayInput(sc),inputKey(sc)));
                 case 3 -> loop = false;
                 default -> System.out.println("invalid");
         }
