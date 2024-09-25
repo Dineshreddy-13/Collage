@@ -27,7 +27,7 @@ public class LinearAndBinarySearch {
         return -1;
     }
 
-    static int[] arrayInput(Scanner sc) {
+    public static int[] arrayInput(Scanner sc) {
         System.out.print("enter array size : ");
         int arr[] = new int[sc.nextInt()];
         System.out.print("enter elements : ");
@@ -37,7 +37,7 @@ public class LinearAndBinarySearch {
         return arr;
     }
         
-    static int inputKey(Scanner sc) {
+    public static int inputKey(Scanner sc) {
         System.out.print("enter element to be searched : ");
         return sc.nextInt();
     }
@@ -46,7 +46,7 @@ public class LinearAndBinarySearch {
         Scanner sc = new Scanner(System.in);
         boolean loop = true;
         do {
-            System.out.println("Menu : \n1.LinearSearch\n2.BinarySearch\n3.exit");
+            System.out.println("\nMenu : \n1.LinearSearch\n2.BinarySearch\n3.exit");
             System.out.print("choose search : ");
             switch(sc.nextInt()) {
                 case 1 -> System.out.println("--> index : " + linearSearch(arrayInput(sc),inputKey(sc)));

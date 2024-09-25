@@ -69,6 +69,7 @@ public class LinkedList { // status -> complete
 		Node current = head;
 		while(startpos < (pos-1) && current != null) {
 			current = current.next;
+			startpos++;
 		}
 		if(current == null) {return;}
 		
