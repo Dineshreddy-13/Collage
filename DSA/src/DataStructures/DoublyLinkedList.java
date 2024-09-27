@@ -33,12 +33,11 @@ public class DoublyLinkedList { // status -> complete
     public void insertAtStart(int data){
         Node newnode = new Node(data);
         if (head == null){
-            newnode.next = head;
             head = newnode;
         }else{
             newnode.next = head;
             head.prev = newnode;
-            newnode = head; 
+            head = newnode; 
         }
     }
 
@@ -78,7 +77,9 @@ public class DoublyLinkedList { // status -> complete
 
         if(temp != null && temp.data == key){
             head = temp.next;
-            head.prev = null;
+            if(head != null){
+                head.prev = null;
+            }
         }
 
         while(temp != null && temp.data != key){
@@ -93,8 +94,7 @@ public class DoublyLinkedList { // status -> complete
             prevoius.next = temp.next;
             temp.next.prev = prevoius;
         }else{
-            temp.prev = null;
-            prevoius.next = temp.next;
+            prevoius.next = null;
         }
 
     }
