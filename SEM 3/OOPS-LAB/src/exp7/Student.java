@@ -35,26 +35,26 @@ public class Student {
 
 class LengthException extends Exception{
     
-    LengthException(String msg){
+    public LengthException(String msg){
         super(msg);
     }
 
 }
 
 class FailedException extends Exception{
-    FailedException(String msg){
+    public FailedException(String msg){
         super(msg);
     }
 }
 
 class NotFirstClassExecption extends Exception{
-    NotFirstClassExecption(String msg){
+    public NotFirstClassExecption(String msg){
         super(msg);
     }
 }
 
 class FirstClassException extends Exception{
-    FirstClassException(String msg){
+    public FirstClassException(String msg){
         super(msg);
     }
 }
