@@ -2,6 +2,7 @@ package exp7;
 import java.util.Scanner;
 
 public class Student {
+    @SuppressWarnings("resource")
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("DineshReddy -> urk23cs1263");
