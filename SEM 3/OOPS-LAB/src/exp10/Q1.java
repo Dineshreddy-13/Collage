@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Q1 {
-	
 	public static void main(String args[]) {
 		new MyFrame();
 	}

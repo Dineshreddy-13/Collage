@@ -27,7 +27,6 @@ public class BinarySearch { // status -> complete
         if (target < arr[mid])
             return recursiveBinarySearch(arr, target, first, mid-1);
         return recursiveBinarySearch(arr, target, mid+1, last);
-
     }
 
     public static void main(String[] args) {
