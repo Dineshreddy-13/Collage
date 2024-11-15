@@ -38,9 +38,16 @@ public class Time {
 
 	
 	public static void main(String args[]) {
-		Time t1 = new Time(11,50,3);
-		Time t2 = new Time(7,50,4);
-		Time t3 = addTime(t1, t2);
-		t3.displayTime();
+		// Time t1 = new Time(11,50,3);
+		// Time t2 = new Time(7,50,4);
+		// Time t3 = addTime(t1, t2);
+		// t3.displayTime();
+
+		for(int i = 1; i<5; i++){
+			for(int j = 1; j<=i; j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 	}
 }
