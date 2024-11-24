@@ -15,7 +15,6 @@ public class SelectionSort { // status -> complete
             int temp = arr[i];
             arr[i] = arr[minindex];
             arr[minindex] = temp;
-
         }
         return arr;
     }
